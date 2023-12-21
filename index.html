@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <title>Bookmarker</title>
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container text-center py-5">
+        <h1 class="display-5 mb-4 w-fit mx-auto">Bookmarker</h1>
+        <hr>
+        <h3>
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </h3>
+        <div class="py-3 text-start">
+            <label for="siteName" class="mb-2 fw-semibold">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site Name
+            </label>
+            <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+        </div>
+        <div class="py-3 text-start">
+            <label for="siteUrl" class="mb-2 fw-semibold">
+                <i class="fa-solid fa-link"></i>
+                Site URL
+            </label>
+            <input type="text" id="siteUrl" class="form-control" placeholder="Website URL">
+        </div>
+        <button class="btn btn-danger" onclick="addBookmark()">Submit</button>
+        <hr>
+
+        <table class="table">
+            <thead class="fw-semibold">
+                <tr>
+                    <td>Index</td>
+                    <td>Website Name</td>
+                    <td>Visit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
